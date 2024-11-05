@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+h2{
+  font-size: large;
+}
+pre{
+  white-space: pre-wrap;
+  color: rgb(248, 248, 242); 
+  background-color: #2b2b2b;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+code{
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
