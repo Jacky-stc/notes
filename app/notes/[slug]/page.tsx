@@ -4,8 +4,8 @@ import rehypeHighlight from "rehype-highlight"
 import "highlight.js/styles/a11y-dark.css"
 
 
-export default async function Notes({params}:{params:{slug:string}}){
-    const  { slug } = await params
+export default async function Notes({params}:{params: Promise<{slug:string}>}){
+    const slug = (await (params)).slug
     console.log(decodeURIComponent(slug))
     const notes = getPostMetaData()
     console.log(notes)
